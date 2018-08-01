@@ -45,7 +45,7 @@
     // - if the report uses expression bindings (DataBindingMode is set to Expressions or ExpressionsAdvanced)
     var defaultExpression = controlsFactory.getPropertyInfo(shortTypeName, "Expression")
     defaultExpression.expressionName = "BindableProperty"
-    controlsFactory.setPropertyDescription(shortTypeName, "BindableProperty", controlsFactory._beforePrintPrintOnPage);
+    controlsFactory.setExpressionBinding(shortTypeName, "BindableProperty", controlsFactory._beforePrintPrintOnPage);
 
     // - if the report uses data bindings (DataBindingMode is set to Bindings)
     ["BindableProperty"].forEach(function (name) {
