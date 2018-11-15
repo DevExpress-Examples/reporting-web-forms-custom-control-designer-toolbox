@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomLabel.cs](./CS/HowToAddCustomControl/CustomLabel.cs) (VB: [CustomLabel.vb](./VB/HowToAddCustomControl/CustomLabel.vb))
+* [custom-label.js](./CS/HowToAddCustomControl/CustomLabel/custom-label.js) (VB: [custom-label.js](./VB/HowToAddCustomControl/CustomLabel/custom-label.js))
+* [Default.aspx](./CS/HowToAddCustomControl/Default.aspx) (VB: [Default.aspx](./VB/HowToAddCustomControl/Default.aspx))
+* [Default.aspx.cs](./CS/HowToAddCustomControl/Default.aspx.cs) (VB: [Default.aspx](./VB/HowToAddCustomControl/Default.aspx))
+* [SampleReport.cs](./CS/HowToAddCustomControl/SampleReport.cs) (VB: [SampleReport.vb](./VB/HowToAddCustomControl/SampleReport.vb))
+<!-- default file list end -->
 # ASPxReportDesigner - How to register a custom control in the Designer's toolbox
 
 
