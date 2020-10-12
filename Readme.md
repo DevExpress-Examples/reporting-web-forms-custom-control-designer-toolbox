@@ -1,6 +1,6 @@
-# ASPxReportDesigner - How to register a custom control in the Designer's toolbox
+# How to register a custom control in the Web End User Designer toolbox
 
-This example demonstrates how to create a custom report control that is the **XRLabel** descendant and add it to the End User Report Designer toolbox.
+This example demonstrates how to create a custom report control inherited from [XRLabel](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRLabel) and add it to the End User Report Designer toolbox.
 
 ![](/images/custom-label-in-designer.png)
 
