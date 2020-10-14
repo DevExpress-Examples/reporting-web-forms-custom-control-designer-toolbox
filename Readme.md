@@ -1,6 +1,6 @@
 # ASPxReportDesigner - How to register a custom control in the Designer's toolbox
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t209289)**
+**[[Run Online]](https://codecentral.devexpress.com/t209289/)**
 <!-- run online end -->
 
 
