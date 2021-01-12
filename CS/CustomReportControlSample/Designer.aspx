@@ -3,7 +3,6 @@
 <%@ Register Assembly="DevExpress.XtraReports.v20.2.Web.WebForms, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
-    <script src="node_modules\tslib\tslib.js"></script>
     <link href="CustomLabel\custom-label.css" rel="stylesheet" />
     <!-- #include file = "CustomLabel\custom-label-content.html" -->
     <script src="CustomLabel/custom-label.js"></script>
