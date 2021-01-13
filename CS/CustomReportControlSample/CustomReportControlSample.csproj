@@ -137,6 +137,7 @@
     <Content Include="Global.asax" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Log\LogFile_2021113.txt" />
     <Content Include="Site.master" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +184,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Log\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <PropertyGroup>
