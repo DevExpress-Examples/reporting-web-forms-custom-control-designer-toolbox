@@ -38,7 +38,7 @@ namespace CustomReportControlSample {
 
         void ProcessException(Exception ex, string message)
         {
-            string logFile = Server.MapPath(@"Log\LogFile_" + DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() + ".txt");
+            string logFile = Server.MapPath(@"LogService\LogFile_" + DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() + ".txt");
 
             StreamWriter writer;
             if (File.Exists(logFile))
