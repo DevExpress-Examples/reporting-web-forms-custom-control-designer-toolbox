@@ -59,7 +59,8 @@ namespace CustomReportControlSample.Services
                         return ms.ToArray();
                     }
                 }
-            } catch (Exception) {
+            } 
+            catch (Exception) {
                 throw new FaultException(new FaultReason("Could not get report data."), new FaultCode("Server"), "GetData");
             }
             throw new FaultException(new FaultReason(string.Format("Could not find report '{0}'.", url)), new FaultCode("Server"), "GetData");
