@@ -22,7 +22,7 @@ namespace CustomReportControlSample
         protected override void PutStateToBrick(DevExpress.XtraPrinting.VisualBrick brick, 
                                                 DevExpress.XtraPrinting.PrintingSystemBase ps) {
             base.PutStateToBrick(brick, ps);
-            brick.Text = this.StringData;
+            brick.Text = StringData ?? CustomNumber;
         }
     }
 }
