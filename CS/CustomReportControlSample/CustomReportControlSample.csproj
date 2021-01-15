@@ -137,7 +137,6 @@
     <Content Include="Global.asax" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LogService\LogFile_2021113.txt" />
     <Content Include="Site.master" />
   </ItemGroup>
   <ItemGroup>
