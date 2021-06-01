@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="Sample.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Sample.WebForm1" %>
 
 <%@ Register Assembly="DevExpress.XtraReports.v17.2.Web, Version=17.2.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 
@@ -21,8 +21,8 @@
 
         <script type="text/javascript">
             function onCustomizeToolbox(s, e) {
-                customizeToolbox(s, e, "<%=GetType(Sample.CustomLabel).ToString()%>",
-                    "<%=GetType(Sample.CustomLabel).AssemblyQualifiedName%>");
+                customizeToolbox(s, e, "<%= typeof(Sample.CustomLabel).ToString() %>",
+                    "<%= typeof(Sample.CustomLabel).AssemblyQualifiedName %>");
             }
         </script>
 
