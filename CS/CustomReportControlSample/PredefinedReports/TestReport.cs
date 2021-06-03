@@ -61,7 +61,6 @@ public class TestReport : DevExpress.XtraReports.UI.XtraReport
         base.Dispose(disposing);
     }
 
-    #region Designer generated code
 
     /// <summary>
     /// Required method for Designer support - do not modify
@@ -375,7 +374,6 @@ public class TestReport : DevExpress.XtraReports.UI.XtraReport
 
     }
 
-    #endregion
 
     private void tableCell4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
     {

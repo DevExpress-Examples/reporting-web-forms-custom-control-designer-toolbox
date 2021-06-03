@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports System.Drawing
 Imports System.Collections
 Imports System.ComponentModel
@@ -201,8 +201,6 @@ Public Class TestReport
 			Me.tableCell4.StylePriority.UseTextAlignment = False
 			Me.tableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
 			Me.tableCell4.Weight = 0.34163161057692309R
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.tableCell4.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.tableCell4_BeforePrint);
 			' 
 			' tableCell5
 			' 
