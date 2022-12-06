@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 using DevExpress.Utils.Serializing;
 

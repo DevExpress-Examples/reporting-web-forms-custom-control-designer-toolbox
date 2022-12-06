@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports System.Collections.Concurrent
 Imports System.Collections.Generic
 Imports System.IO
@@ -24,7 +24,7 @@ Namespace CustomReportControlSample.Services
 
 		Private Function IsWithinReportsFolder(ByVal url As String, ByVal folder As String) As Boolean
 			Dim rootDirectory = New DirectoryInfo(folder)
-			Dim fileInfo As New FileInfo(Path.Combine(folder, url))
+			Dim fileInfo = New FileInfo(Path.Combine(folder, url))
 			Return fileInfo.Directory.FullName.ToLower().StartsWith(rootDirectory.FullName.ToLower())
 		End Function
 
@@ -68,7 +68,8 @@ Namespace CustomReportControlSample.Services
 			' This method is called when running the Report Designer, 
 			' before the Open Report and Save Report dialogs are shown and after a new report is saved to a storage.
 
-			Return Directory.GetFiles(reportDirectory, "*" & FileExtension).Select(AddressOf Path.GetFileNameWithoutExtension).Union(ReportsFactory.Reports.Select(Function(x) x.Key)).ToDictionary(Function(x) x)
+			Return Directory.GetFiles(reportDirectory, "*" & FileExtension).Select(AddressOf Path.GetFileNameWithoutExtension).Union(
+				ReportsFactory.Reports.Select(Function(x) x.Key)).ToDictionary(Function(x) x)
 		End Function
 
 		Public Overrides Sub SetData(ByVal report As XtraReport, ByVal url As String)
