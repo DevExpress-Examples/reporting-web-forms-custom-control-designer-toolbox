@@ -61,7 +61,6 @@ public class TestReport : DevExpress.XtraReports.UI.XtraReport
         base.Dispose(disposing);
     }
 
-    #region Designer generated code
 
     /// <summary>
     /// Required method for Designer support - do not modify
@@ -216,7 +215,7 @@ public class TestReport : DevExpress.XtraReports.UI.XtraReport
             this.tableCell4.StylePriority.UseTextAlignment = false;
             this.tableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell4.Weight = 0.34163161057692309D;
-            this.tableCell4.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.tableCell4_BeforePrint);
+            this.tableCell4.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.tableCell4_BeforePrint);
             // 
             // tableCell5
             // 
@@ -375,9 +374,8 @@ public class TestReport : DevExpress.XtraReports.UI.XtraReport
 
     }
 
-    #endregion
 
-    private void tableCell4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+    private void tableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
     {
         (sender as XRTableCell).Text += " Customized";
     }
