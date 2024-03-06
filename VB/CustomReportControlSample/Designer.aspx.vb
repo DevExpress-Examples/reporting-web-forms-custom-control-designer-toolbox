@@ -10,7 +10,7 @@ Namespace CustomReportControlSample
 		Inherits System.Web.UI.Page
 
 		Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-			'ASPxReportDesigner1.OpenReport("CustomReportControl");
+			ASPxReportDesigner1.CustomControlTypes.AddRange({GetType(MyControl), GetType(NumericLabel)})
 		End Sub
 	End Class
 End Namespace
