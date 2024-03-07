@@ -1,9 +1,8 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeBehind="Designer.aspx.vb" Inherits="CustomReportControlSample.Designer" %>
+<%@ Page Language="VB" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeBehind="Designer.aspx.vb" Inherits="CustomReportControlSample.Designer" %>
 
-<%@ Register Assembly="DevExpress.XtraReports.v23.2.Web.WebForms, Version=23.2.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.XtraReports.v23.2.Web.WebForms, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
-
     <script type="text/html" id="dxrd-svg-toolbox-numericlabel">
         <svg viewBox="-2 -4 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Layer_1" transform="translate(-2, -4)" style="enable-background: new 0 0 32 32">
@@ -19,6 +18,6 @@
         </svg>
     </script>
 
-	<dx:ASPxReportDesigner EnableRichTextEditor="False" ID="ASPxReportDesigner1" runat="server">
-	</dx:ASPxReportDesigner>
+    <dx:ASPxReportDesigner EnableRichTextEditor="False" ID="ASPxReportDesigner1" runat="server">
+    </dx:ASPxReportDesigner>
 </asp:Content>
