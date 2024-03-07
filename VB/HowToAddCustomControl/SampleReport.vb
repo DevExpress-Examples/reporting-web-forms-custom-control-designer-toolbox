@@ -1,16 +1,14 @@
-﻿Imports System
 Imports System.Drawing
-Imports System.Collections
 Imports System.ComponentModel
 Imports DevExpress.XtraReports.UI
 
 Namespace Sample
-	Partial Public Class SampleReport
-		Inherits DevExpress.XtraReports.UI.XtraReport
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+    Public Partial Class SampleReport
+        Inherits XtraReport
 
-	End Class
+        Public Sub New()
+            InitializeComponent()
+        End Sub
+    End Class
 End Namespace
