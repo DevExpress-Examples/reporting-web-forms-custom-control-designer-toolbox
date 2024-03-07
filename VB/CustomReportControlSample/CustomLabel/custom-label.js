@@ -10,21 +10,32 @@
     // Create serialization information for custom properties.
 
     var addressSerializationInfos = [
-        $.extend({}, stringInfo, { propertyName: "countryCode", modelName: "@CountryCode", displayName: "CountryCode", localizationId: "" }),
-        $.extend({}, stringInfo, { propertyName: "city", modelName: "@City", displayName: "City", localizationId: "" }),
+        $.extend({}, stringInfo, {
+            propertyName: "countryCode", modelName: "@CountryCode",
+            displayName: "CountryCode", localizationId: ""
+        }),
+        $.extend({}, stringInfo, {
+            propertyName: "city", modelName: "@City",
+            displayName: "City", localizationId: ""
+        }),
     ];
 
     var customerSerializationInfo = {
-        propertyName: "customerInfo", modelName: "customerInfo", displayName: "Customer Information", defaultVal: "", localizationId: "",
+        propertyName: "customerInfo", modelName: "customerInfo",
+        displayName: "Customer Information", defaultVal: "", localizationId: "",
         editor: objectEditor, info: addressSerializationInfos
     }
 
     var customNumberSerializationInfo = $.extend({}, numberInfo,
-        { propertyName: "customNumber", modelName: "@CustomNumber", displayName: "Custom Number", defaultVal: 0, localizationId: "" }
+        {
+            propertyName: "customNumber", modelName: "@CustomNumber",
+            displayName: "Custom Number", defaultVal: 0, localizationId: ""
+        }
     );
 
     var bindablePropertySerializationInfo = $.extend({}, stringInfo, {
-        propertyName: "stringData", modelName: "@StringData", displayName: "Bindable Property", defaultVal: "", localizationId: ""
+        propertyName: "stringData", modelName: "@StringData",
+        displayName: "Bindable Property", defaultVal: "", localizationId: ""
     });
 
     // Create the custom label's surface type.
@@ -49,17 +60,20 @@
             "@SizeF": "400,50"
         },
         toolboxIndex: 1,
-        info: [customerSerializationInfo, bindablePropertySerializationInfo, customNumberSerializationInfo],
+        info: [customerSerializationInfo, bindablePropertySerializationInfo,
+            customNumberSerializationInfo],
         popularProperties: ["customerInfo", "stringData", "customNumber"],
     });
 
     // Register the custom label in the Report Designer Toolbox.
     controlsFactory.registerControl(shortTypeName, customLabelInfo);
 
-    // Adjust the custom label bindings if the report uses expression bindings (DataBindingMode is set to Expressions or ExpressionsAdvanced).
+    // Adjust the custom label bindings if the report uses expression bindings, 
+    // that is the DataBindingMode is set to Expressions or ExpressionsAdvanced.
     var defaultExpression = controlsFactory.getPropertyInfo(shortTypeName, "Expression")
     defaultExpression.expressionName = "StringData"
-    controlsFactory.setExpressionBinding(shortTypeName, "StringData", controlsFactory._beforePrintPrintOnPage);
+    controlsFactory.setExpressionBinding(shortTypeName, "StringData",
+        controlsFactory._beforePrintPrintOnPage);
 
     var dataBindings = controlsFactory.getPropertyInfo(shortTypeName, "Data Bindings");
     dataBindings.allDataBindings.push("StringData");

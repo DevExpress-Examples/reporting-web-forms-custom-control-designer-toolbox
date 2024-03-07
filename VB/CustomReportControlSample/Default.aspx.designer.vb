@@ -6,10 +6,8 @@
 '     the code is regenerated. 
 ' </auto-generated>
 '------------------------------------------------------------------------------
-
 Namespace CustomReportControlSample
 
-	Partial Public Class [Default]
-
-	End Class
+    Public Partial Class [Default]
+    End Class
 End Namespace
