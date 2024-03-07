@@ -1,4 +1,4 @@
-<%@ Language="C#" %>
+<%@ Language="VB" %>
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="DevExpress.XtraReports.Web" %>
 <%@ Import Namespace="CustomReportControlSample.Services" %>
