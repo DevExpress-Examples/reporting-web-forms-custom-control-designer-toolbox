@@ -1,6 +1,6 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="Sample.WebForm1" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="Sample.WebForm1" %>
 
-<%@ Register Assembly="DevExpress.XtraReports.v14.2.Web, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.XtraReports.v14.2.Web, Version=14.2.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 
 <!DOCTYPE html>
 
@@ -25,10 +25,10 @@
         <script src="CustomLabel/custom-label.js"></script>
         <script type="text/javascript">
 
-            DevExpress.Designer.registerControl("<%=GetType(Sample.CustomLabel).ToString()%>", {
+            DevExpress.Designer.registerControl("<%= typeof(Sample.CustomLabel).ToString() %>", {
                 info: newSerializationsInfo,
                 defaultVal: {
-                    "@ControlType": "<%=GetType(Sample.CustomLabel).AssemblyQualifiedName%>",
+                    "@ControlType": "<%= typeof(Sample.CustomLabel).AssemblyQualifiedName %>",
                     "@SizeF": "100,23"
                 },
                 type: DevExpress.Designer.Report.ControlViewModel,
