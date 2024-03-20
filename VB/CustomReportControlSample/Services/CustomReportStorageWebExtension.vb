@@ -69,7 +69,7 @@ Namespace CustomReportControlSample.Services
             ' Returns a dictionary of the existing report URLs and display names. 
             ' This method is called when running the Report Designer, 
             ' before the Open Report and Save Report dialogs are shown and after a new report is saved to a storage.
-            Return Directory.GetFiles(reportDirectory, "*" & FileExtension).[Select](New Func(Of String, String)(AddressOf Path.GetFileNameWithoutExtension)).Union(Reports.[Select](Function(x) x.Key)).ToDictionary(Function(x) x)
+            Return Directory.GetFiles(reportDirectory, "*" & FileExtension).[Select](New Func(Of String, String)(AddressOf Path.GetFileNameWithoutExtension)).Union(Reports.[Select](Function(x) x.Key)).ToDictionary(Of String, String)(Function(x) x)
         End Function
 
         Public Overrides Sub SetData(ByVal report As XtraReport, ByVal url As String)
